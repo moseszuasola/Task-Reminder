@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Task Notes</title>
+  <link rel="stylesheet" type="text/css" href="styles.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <section>
+        <div id="mainFrame">
+            <div id="formBox">
+            <h1>Task Notes</h1>          
+            <form id="note-form" action="">
+
+                <div class="boxer" >
+                    <input type="text" id="client-name" required><br>
+                    <label for="client-name">Client Name:</label>
+                </div>
+                <div class="boxer">
+                    <input type="text" id="task-name" required>
+                    <label for="task-name">Task Name:</label>
+                </div>
+                <div class="boxer">
+                    <input type="text" id="task-link" required>
+                    <label for="task-link">Task Link:</label>
+                </div>
+                <div>
+                    <label for="task-description">Task Description:</label><br>
+                    <textarea id="task-description" required></textarea>
+                </div><br>
+            <button type="submit">Add Note</button>
+            </form>
+            </div>
+            <div id="note-list">
+                <script src="scripts.js"></script>
+            </div>
+        </div>
+        
+        <div id="cloudBG">
+        <img src="images/bottomBG.png" />
+    </div>
+    </section>
+</body>
+</html>
